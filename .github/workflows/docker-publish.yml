@@ -20,7 +20,7 @@ concurrency:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: modelzai/mosec-imagebind
+  IMAGE_NAME: ${{ secrets.DOCKERIO_MODELZ_USERNAME }}/mosec-imagebind
 
 jobs:
   build:

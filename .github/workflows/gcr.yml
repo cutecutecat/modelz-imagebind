@@ -20,7 +20,7 @@ concurrency:
 
 env:
   REGISTRY: us-central1-docker.pkg.dev/nth-guide-378813
-  IMAGE_NAME: modelzai/mosec-imagebind
+  IMAGE_NAME: ${{ secrets.DOCKERIO_MODELZ_USERNAME }}/mosec-imagebind
 
 jobs:
   build:
